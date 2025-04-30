@@ -24,7 +24,7 @@ You can follow my learning journey here as I build and improve real-world projec
 
 ---
 
-📬 *Contact or connect with me on GitHub, or via email if you'd like to collaborate!*
+📬 *Contact or connect with me on GitHub, or LinkedIn if you'd like to collaborate!*
 
 🔗 [LinkedIn](linkedin.com/in/krzysztof-uciecha-38a58b360)
 
