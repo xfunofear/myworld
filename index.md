@@ -9,6 +9,7 @@ Welcome to my cybersecurity portfolio — a collection of hands-on security asse
 This site documents real-world experiments using Kali Linux, and best practices to secure web systems.
 
 ---
+![l](images/0_R80uipYuVtnqtz3Y.jpg)
 
 ## 📂 Projects
 
