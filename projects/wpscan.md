@@ -47,5 +47,5 @@ Scan result was saved as wynik_scanowania.txt and uploaded to this repository.
 
 [See the results of scanning](wynik_scanowania.txt)
 
-[Back to Projects](projects.html)
+[Back to Projects](../projects.html)
 
