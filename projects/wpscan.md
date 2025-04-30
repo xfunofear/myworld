@@ -15,7 +15,7 @@ title: WPScan Audit
 
 ## ⚙️ Scan Parameters:
 
-```bash
+
 wpscan --url https://www.depravebhp.pl \
   --user-agent "Mozilla/5.0" \
   --enumerate vp,vt,u \
@@ -44,3 +44,5 @@ Google Site Kit v1.150.0 (latest: 1.151.0)
 
 📁 Exported Output:
 Scan result was saved as wynik_scanowania.txt and uploaded to this repository.
+[See the results of scanning](wynik_scanowania.txt)
+
