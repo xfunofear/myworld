@@ -44,5 +44,8 @@ Google Site Kit v1.150.0 (latest: 1.151.0)
 
 📁 Exported Output:
 Scan result was saved as wynik_scanowania.txt and uploaded to this repository.
+
 [See the results of scanning](wynik_scanowania.txt)
+
+[Back to Projects](projects.html)
 
