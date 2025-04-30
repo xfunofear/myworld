@@ -2,24 +2,30 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+
+# 🧠 Cybersecurity Projects Portfolio
+
+Welcome to my cybersecurity portfolio — a collection of hands-on security assessments, vulnerability scans, and defensive audits.  
+This site documents real-world experiments using Kali Linux, and best practices to secure web systems.
+
+---
+
+## 📂 Projects
+
+Here you'll find detailed reports of each project, including goals, tools used, results, and recommendations.
 
 [View Projects](projects.html)
 
-There should be whitespace between paragraphs.
+## 🙋 About Me
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+I'm an aspiring cybersecurity analyst focused on practical skill-building in ethical hacking, vulnerability testing, and secure web design.
 
-# Header 1
+You can follow my learning journey here as I build and improve real-world projects.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+---
 
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
+📬 *Contact or connect with me on GitHub, or via email if you'd like to collaborate!*
+🔗 [LinkedIn](linkedin.com/in/krzysztof-uciecha-38a58b360)
 ### Header 3
 
 ```js
