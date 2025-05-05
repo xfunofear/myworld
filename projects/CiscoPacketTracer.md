@@ -59,6 +59,7 @@ To simulate an attack:
 <img src="images/dos.png" alt="Traffic Generator" width="600"/>
 </p>
 
+
 Go to PC3 > Desktop > Traffic Generator
 
 Set the destination IP to 192.168.1.1 (the router)
