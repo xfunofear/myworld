@@ -85,6 +85,14 @@ During simulation mode, the router receives unusually high ICMP traffic from PC3
 
 ## Responding: Blocking the Attacker Using ACL
 
+### 1.  Log in to the Router via Terminal 
+
+
+Click on the router → CLI
+
+Enter: enable
+enter your enable password (haslo123).
+
 ### 1: Create an ACL
 
 access-list 100 deny ip host 192.168.1.12 any
@@ -99,4 +107,12 @@ ip access-group 100 in
 <img src="../images/dos2 block.jpg" alt="Block dos" width="900"/>
 </p>
 
+## Testing and Results
+From PC3 (Hacker):
+ping 192.168.1.1
+Result: 100% packet loss – communication blocked
+
+<p align="center">
+<img src="../images/dos3 blocked.jpg" alt="Block dos" width="900"/>
+</p>
 
