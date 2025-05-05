@@ -12,12 +12,12 @@ This project demonstrates a simple business network topology built in Cisco Pack
 ---
 ### IP Addressing:
 
-| Device        | IP Address      | Role                |
-|---------------|------------------|---------------------|
-| PC1           | 192.168.1.10     | Regular user        |
-| PC2           | 192.168.1.11     | Regular user        |
-| PC3           | 192.168.1.12     | Simulated attacker  |
-| Router G0/0   | 192.168.1.1      | Default gateway     |
+| Device        | IP Address       | Role               |
+|---------------|------------------|--------------------|
+| PC1  ADMIN    | 192.168.1.10     | Regular user       |
+| PC2  USER     | 192.168.1.11     | Regular user       |
+| PC3  HACKER   | 192.168.1.12     | Simulated attacker |
+| Router G0/0   | 192.168.1.1      | Default gateway    |
 
 ---
 
@@ -26,7 +26,11 @@ This project demonstrates a simple business network topology built in Cisco Pack
 ### 1. Basic settings:
 
 ```bash
-enable
-configure terminal
-hostname xfunofearRouter
-ip domain-name xfunofear.com
+- enable
+- configure terminal
+- hostname xfunofearRouter
+- ip domain-name xfunofear.com
+
+###
+
+
