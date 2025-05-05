@@ -116,3 +116,20 @@ Result: 100% packet loss – communication blocked
 <img src="../images/dos3 blocked.jpg" alt="Block dos" width="900"/>
 </p>
 
+##Learnings
+
+This project demonstrates how to:
+
+Design a functional LAN topology
+
+Secure remote access via SSH
+
+Detect malicious traffic
+
+Use ACLs to isolate threats
+
+Practice incident response inside a simulation
+
+
+
+[Back to Projects](../projects.html)
