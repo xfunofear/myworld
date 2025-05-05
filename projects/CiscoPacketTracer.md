@@ -26,9 +26,23 @@ This project demonstrates a simple business network topology built in Cisco Pack
 ### 1. Basic settings:
 
 - enable
-- configure terminal
+- configure terminal ( conf t )
 - hostname xfunofearRouter
 - ip domain-name xfunofear.com
+- enable secret
+  
+📌 What each command does:
+enable – enters privileged EXEC mode.
+
+conf t – enters global configuration mode.
+
+hostname xfunofearRouter – sets a custom device name (optional but useful).
+
+ip domain-name xfunofear.com – sets the domain name, required for RSA key generation.
+
+enable secret haslo123 – sets a secure password for accessing privileged mode (Router#), which is crucial for security.
+
+
 
 ### 1. Assign Static IPs to All PCs
 
