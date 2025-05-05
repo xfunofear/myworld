@@ -57,13 +57,13 @@ enable secret haslo123 – sets a secure password for accessing privileged mode 
 - no shutdown
 
 ### 3.Enable SSH ⚠️ Environment Limitation 
-username admin privilege 15 secret haslo123
-crypto key generate rsa
-Choose 1024-bit keys
-ip ssh version 2
-line vty 0 4
-transport input ssh
-login local
+- username admin privilege 15 secret haslo123
+- crypto key generate rsa
+- Choose 1024-bit keys
+- ip ssh version 2
+- line vty 0 4
+- transport input ssh
+- login local
 
 ⚠️ Environment Limitation – Cisco Packet Tracer and SSH
 Note: Cisco Packet Tracer has known limitations when it comes to SSH functionality. Although SSH can be correctly configured on a router, the simulation environment does not fully support interactive SSH sessions from end devices.
