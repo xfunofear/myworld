@@ -80,3 +80,23 @@ Packet Size: 1200 bytes
 
 Click SEND – this simulates a flood of ICMP packets (a basic DoS attack).
 
+### Detecting the Attack
+During simulation mode, the router receives unusually high ICMP traffic from PC3 (192.168.1.12). This is identified as a Denial of Service (DoS) attempt.
+
+## Responding: Blocking the Attacker Using ACL
+
+### 1: Create an ACL
+
+access-list 100 deny ip host 192.168.1.12 any
+access-list 100 permit ip any any
+
+### 2. Apply ACL to the Router Interface
+
+interface GigabitEthernet0/0
+ip access-group 100 in
+
+<p align="center">
+<img src="../images/dos2 block.jpg" alt="Block dos" width="900"/>
+</p>
+
+
