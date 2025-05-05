@@ -56,7 +56,7 @@ enable secret haslo123 – sets a secure password for accessing privileged mode 
 - ip address 192.168.1.1 255.255.255.0
 - no shutdown
 
-### 3.Enable SSH ( ⚠️ Environment Limitation )
+### 3.Enable SSH ⚠️ Environment Limitation 
 username admin privilege 15 secret haslo123
 crypto key generate rsa
 Choose 1024-bit keys
