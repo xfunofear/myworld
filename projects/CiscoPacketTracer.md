@@ -42,7 +42,7 @@ This project demonstrates a simple business network topology built in Cisco Pack
 - ip address 192.168.1.1 255.255.255.0
 - no shutdown
 
-### 3.Enable SSH
+### 3.Enable SSH ( ⚠️ Environment Limitation )
 username admin privilege 15 secret haslo123
 crypto key generate rsa
 Choose 1024-bit keys
@@ -50,6 +50,19 @@ ip ssh version 2
 line vty 0 4
 transport input ssh
 login local
+
+⚠️ Environment Limitation – Cisco Packet Tracer and SSH
+Note: Cisco Packet Tracer has known limitations when it comes to SSH functionality. Although SSH can be correctly configured on a router, the simulation environment does not fully support interactive SSH sessions from end devices.
+
+Specifically:
+
+The Terminal tab on end devices does not support the ssh command.
+
+The Command Prompt tab allows only a simplified simulation of SSH without a real CLI session.
+
+Even with correct SSH configuration, users may experience errors or incomplete functionality during testing.
+
+As a result, the SSH login process in Packet Tracer may not behave exactly like it would in a real-world scenario. This should be taken into account when interpreting test results related to secure remote access.
 
 ## Simulating a DoS Attack
 Using the Built-in Traffic Generator on PC3 HACKER
