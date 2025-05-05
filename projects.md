@@ -9,11 +9,8 @@ Welcome to the section where I document security tests and tool usage.
 
 ## 🔧 Projects
 
-1. [🔍 WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
+1. [ WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
+2. [ Small Business Network Simulation with Security and Attack Blocking (Cisco Packet Tracer)](projects/CiscoPacketTracer.html)
 
-<!-- Future projects to add:
-2. Nmap Scan
-3. Burp Suite Web Analysis
--->
 
 [⬅️ Back to Home](index.html)
