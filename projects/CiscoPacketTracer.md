@@ -56,7 +56,7 @@ Using the Built-in Traffic Generator on PC3 HACKER
 To simulate an attack:
 
 <p align="center">
-<img src="../images/dos.png" alt="Traffic Generator" width="800"/>
+<img src="../images/dos.png" alt="Traffic Generator" width="900"/>
 </p>
 
 
