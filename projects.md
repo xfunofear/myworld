@@ -9,17 +9,18 @@ Welcome to the section where I document security tests and tool usage.
 
 ## 🔧 Projects
 
-### AZURE <p>
-  <img src="./icons/icons8-azure-48.png" width="32" style="vertical-align: middle;" />
-  </p>
+### AZURE 
+<p>
+<img src="./icons/icons8-azure-48.png" width="32" style="vertical-align: middle;" />
+</p>
 
 <h2>
-<img src="/icons/icons8-azure-48.png" width="24" style="vertical-align: middle; margin-right: 8px;" />
+<img src="./icons/icons8-azure-48.png" width="24" style="vertical-align: middle; margin-right: 8px;" />
 Azure Projects
 </h2>
 
 ## 
-<img src="/icons/icons8-azure-48.png" width="20" style="vertical-align: middle; margin-right: 8px;" /> Azure Projects
+<img src="./icons/icons8-azure-48.png" width="20" style="vertical-align: middle; margin-right: 8px;" /> Azure Projects
 
 
 
