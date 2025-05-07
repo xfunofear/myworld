@@ -9,8 +9,10 @@ Welcome to the section where I document security tests and tool usage.
 
 ## 🔧 Projects
 
-### AZURE 
-![Azure Logo](./assets/icons/icons8-azure-48.png)
+### AZURE <p>
+  <img src="./assets/icons/icons8-azure-48.png" width="32" style="vertical-align: middle;" />
+  </p>
+
 
 
 1. [ WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
