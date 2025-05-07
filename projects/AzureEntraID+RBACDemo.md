@@ -140,3 +140,5 @@ This project demonstrates practical usage of Microsoft Entra ID (formerly Azure 
 
 ---
 
+[Back to Projects](../projects.html)
+
