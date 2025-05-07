@@ -18,6 +18,9 @@ Welcome to the section where I document security tests and tool usage.
 Azure Projects
 </h2>
 
+## 
+<img src="/icons/icons8-azure-48.png" width="20" style="vertical-align: middle; margin-right: 8px;" /> Azure Projects
+
 
 
 1. [ WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
