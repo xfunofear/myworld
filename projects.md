@@ -17,12 +17,16 @@ Azure Projects
 
 [ Azure Entra ID + RBAC Demo (Free Tier)](projects/AzureEntraID+RBACDemo.html)
 
+---
+
 <h2>
 <img src="./icons/icons8-kali-linux-100.png" width="32" style="vertical-align: middle; margin-right: 8px;" />
 Kali Linux Projects
 </h2>
 
 [ WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
+
+---
 
 <h2>
 <img src="./icons/icons8-webex-48.png" width="32" style="vertical-align: middle; margin-right: 8px;" />
@@ -31,11 +35,6 @@ Networking Projects
 
 [ WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
 
-
-
-1. [ WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
-2. [ Small Business Network Simulation with Security and Attack Blocking (Cisco Packet Tracer)](projects/CiscoPacketTracer.html)
-3. [ Azure Entra ID + RBAC Demo (Free Tier)](projects/AzureEntraID+RBACDemo.html)
-
+---
 
 [⬅️ Back to Home](index.html)
