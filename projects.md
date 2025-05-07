@@ -7,7 +7,7 @@ title: My Projects
 
 Welcome to the section where I document security tests and tool usage.
 
-## 🔧 Projects
+
 
 
 <h2>
