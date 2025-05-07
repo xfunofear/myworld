@@ -17,7 +17,7 @@ This project demonstrates practical usage of Microsoft Entra ID (formerly Azure 
 - Added `testuser` to Microsoft Entra ID
 - Used manual password reset for controlled login
   <p align="center">
-<img src="../images/Azure/1.jpg" alt="Created a Test User" width="900"/>
+<img src="../images/azure/1.jpg" alt="Created a Test User" width="900"/>
 </p>
 
 
