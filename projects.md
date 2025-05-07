@@ -33,7 +33,7 @@ Kali Linux Projects
 Networking Projects
 </h2>
 
-[ WPScan – WordPress Vulnerability Audit](projects/wpscan.html)
+[ Small Business Network Simulation with Security and Attack Blocking](projects/CiscoPacketTracer.html)
 
 ---
 
