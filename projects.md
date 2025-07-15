@@ -9,7 +9,7 @@ Welcome to the section where I document security tests and tool usage.
 
 
 <h2>
-<img src="./icons/icons8-azure-48.png" width="32" style="vertical-align: middle; margin-right: 8px;" />
+<img src="./icons/icons8-online-support-94.png" width="32" style="vertical-align: middle; margin-right: 8px;" />
 IT Support Projects
 </h2>
 
