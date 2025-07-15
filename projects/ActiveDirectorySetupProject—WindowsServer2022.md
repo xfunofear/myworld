@@ -63,27 +63,55 @@ The goal is to create a simple domain-based infrastructure to showcase basic kno
 ---
 ### 3. Promote Server to Domain Controller
 
-- Create new forest: `lab.local`
-- Set Directory Services Restore Mode (DSRM) password
-- Reboot after promotion
-- Log in as `LAB\Administrator`
+After installing the "Active Directory Domain Services" role, the server needs to be promoted to a Domain Controller.
+
+🧭 Steps:
+
+1. In **Server Manager**, click the **flag icon** (⚠️ in top bar) → select **"Promote this server to a domain controller"**.
 
 <p align="center">
 <img src="../images/SCR6 PROMOE THIS SERVER.png" alt="SCR6 PROMOE THIS SERVER.png" width="900"/>
 </p>
 ---
+2. In the **Deployment Configuration** step:
+   - Select: `Add a new forest`
+   - Root domain name: `lab.local`
+   
 <p align="center">
 <img src="../images/SCR7_ LAB LOCAL.png" alt="SCR7_ LAB LOCAL.png" width="900"/>
 </p>
 ---
+3. In the **Domain Controller Options** step:
+   - Leave default options checked: `Domain Name System (DNS)` and `Global Catalog (GC)`
+   - Set the **Directory Services Restore Mode (DSRM)** password (you’ll need this for recovery scenarios)
+
 <p align="center">
 <img src="../images/SCR8 _ EKRAN USTAWIANIA HASLA.png" alt="SCR8 _ EKRAN USTAWIANIA HASLA.png" width="900"/>
 </p>
 ---
+
+4. Click **Next** through the remaining configuration steps (NetBIOS name, paths, review)
+
+5. At the **Prerequisites Check** step:
+   - Wait for validation to complete (warnings are OK)
+   - Click **Install**
+
 <p align="center">
 <img src="../images/SCR9_ INSTALL.png" alt="SCR9_ INSTALL.png" width="900"/>
 </p>
 ---
+6. The server will automatically **reboot** after promotion.
+
+7. After reboot, log in using domain credentials:
+   - Username: `LAB\Administrator`
+   - Confirm login via `whoami` in CMD:
+     ```cmd
+     whoami
+     ```
+     Should output:
+     ```
+     lab\administrator
+     ```
 <p align="center">
 <img src="../images/SCR10 LOGOWANIE.png" alt="SCR10 LOGOWANIE.png" width="900"/>
 </p>
