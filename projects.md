@@ -3,10 +3,17 @@ layout: default
 title: My Projects
 ---
 
-# 💼 My Cybersecurity Projects
+# 💼 My Technology & Cybersecurity Projects
 
 Welcome to the section where I document security tests and tool usage.
 
+
+<h2>
+<img src="./icons/icons8-azure-48.png" width="32" style="vertical-align: middle; margin-right: 8px;" />
+IT Support Projects
+</h2>
+
+[Active Directory Setup Project — Windows Server 2022](projects/ActiveDirectorySetupProject—WindowsServer2022.html)
 
 
 
