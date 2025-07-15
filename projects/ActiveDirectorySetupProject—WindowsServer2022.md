@@ -9,6 +9,7 @@ The goal was to simulate a small enterprise Active Directory setup using Windows
 - Role-based access control
 ## All tasks were performed on a **virtual machine** created and configured locally, using a clean ISO of Windows Server 2022.
 ---
+
 ## 🎯 Objective
 
 The goal is to create a simple domain-based infrastructure to showcase basic knowledge of:
