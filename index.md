@@ -3,10 +3,12 @@ layout: default
 ---
 
 
-# 🧠 Cybersecurity Projects Portfolio
+# 🧠Technical IT & Cybersecurity Projects Portfolio
 
-Welcome to my cybersecurity portfolio — a collection of hands-on security assessments, vulnerability scans, and defensive audits.  
-This site documents real-world experiments using Kali Linux, and best practices to secure web systems.
+Welcome to my portfolio — a collection of hands-on security assessments, vulnerability scans, defensive audits 
+and Helpdesk operations and incident handling.
+This site showcases the tools and technologies I’m comfortable using across both IT support and cybersecurity 
+— from system utilities and scripting languages to security testing and endpoint protection platforms.
 
 ---
 
