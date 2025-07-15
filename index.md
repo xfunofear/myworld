@@ -18,6 +18,9 @@ Here you'll find detailed reports of each project, including goals, tools used, 
 
 [View Projects](projects.html)
 
+[TryHackMe](https://tryhackme.com/p/xfunofear)
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4622463" style='border:none;'></iframe>
+
 ## 🙋 About Me
 
 I'm an aspiring cybersecurity analyst focused on practical skill-building in ethical hacking, vulnerability testing, and secure web design.
@@ -25,6 +28,7 @@ I'm an aspiring cybersecurity analyst focused on practical skill-building in eth
 You can follow my learning journey here as I build and improve real-world projects.
 
 ---
+
 
 📬 *Contact or connect with me on GitHub, or LinkedIn if you'd like to collaborate!*
 
