@@ -176,9 +176,19 @@ After installing the "Active Directory Domain Services" role, the server needs t
 
 ---
 
-## ✅ Verification
+📌 Summary
+This project showcases a foundational Active Directory (AD) environment built on Windows Server 2022. Throughout the setup, key administrative concepts were applied, including:
 
-Open Command Prompt (CMD):
+Deploying a domain controller and creating a new AD forest (lab.local)
 
-```bash
-whoami
+Installing and configuring the Active Directory Domain Services (AD DS) role
+
+Creating Organizational Units (OUs) to logically structure domain resources
+
+Adding users and groups to manage access and permissions through role-based access control
+
+Verifying domain login using domain credentials (LAB\Administrator, jkowalski)
+
+This hands-on lab reflects real-world IT administration tasks and helps demonstrate essential skills in directory services, user/group management, and Windows Server environments.
+
+
