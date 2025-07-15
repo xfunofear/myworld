@@ -1,4 +1,4 @@
-# 🧠 Active Directory Setup on Windows Server 2022 (VirtualBox Lab)
+# 🧠 Active Directory Setup on Windows Server 2022 
 
 This project demonstrates the installation and configuration of Active Directory Domain Services (AD DS) in a virtualized lab environment using **Oracle VirtualBox**.
 
@@ -7,8 +7,7 @@ The goal was to simulate a small enterprise Active Directory setup using Windows
 - Organizational Unit (OU) design
 - User and group creation
 - Role-based access control
-
-All tasks were performed on a **virtual machine** created and configured locally, using a clean ISO of Windows Server 2022.
+## All tasks were performed on a **virtual machine** created and configured locally, using a clean ISO of Windows Server 2022.
 ---
 ## 🎯 Objective
 
