@@ -36,7 +36,9 @@ The goal is to create a simple domain-based infrastructure to showcase basic kno
 - Reboot after network changes
 
 📸 `screenshots/server-manager-role.png`
-
+<p align="center">
+<img src="../images/SCR 1 _ System renamed to SRV-DC01.png" alt="SCR 1 _ System renamed to SRV-DC01.png" width="900"/>
+</p>
 ---
 
 ### 2. Install AD DS Role
