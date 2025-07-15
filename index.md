@@ -17,7 +17,8 @@ This site showcases the tools and technologies I’m comfortable using across bo
 Here you'll find detailed reports of each project, including goals, tools used, results, and recommendations.
 
 [View GitHub Projects](projects.html)
-or
+---
+
 [TryHackMe](https://tryhackme.com/p/xfunofear)
 <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4622463" style='border:none;'></iframe>
 
