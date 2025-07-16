@@ -39,11 +39,9 @@ This lab demonstrates how to configure a Windows 10 client and join it to an exi
   - Promiscuous Mode: Deny
 
 <p allign="center">
-<img =src"../images/ad2/vm1.jpg" width="900"/></p>p
+<img src="../images/ad2/vm1.jpg" width="900"/> </p>
 
 
-
----
 
 ### 3. Configure Static IP in Windows 10
 
