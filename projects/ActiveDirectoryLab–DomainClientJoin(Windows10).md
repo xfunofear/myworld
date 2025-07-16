@@ -57,8 +57,6 @@ Preferred DNS: 192.168.41.10 (DC address)
 <p allign="center">
 <img src="../images/ad2/s22ip.png" width="900"/> </p>
 
-
-
 ---
 
 ### 4. Rename Computer
@@ -68,7 +66,6 @@ Preferred DNS: 192.168.41.10 (DC address)
 - New name: `CLIENT01`
 - Restart when prompted
 
-📸 Screenshot: Rename dialog
 
 ---
 
@@ -79,20 +76,10 @@ Open Command Prompt:
 ping 192.168.41.10
 Expect 0% packet loss.
 
-📸 Screenshot: Successful ping to DC
+<p allign="center">
+<img src="../images/ad2//s23ping.png" width="900"/> </p>
 
-6. Test DNS Resolution
-Still in Command Prompt:
-
-bash
-Kopiuj
-Edytuj
-ping lab.local
-If reply comes from 192.168.41.10, DNS is working.
-
-📸 Screenshot: ping lab.local
-
-7. Join Domain
+6. Join Domain
 Win + R → sysdm.cpl → Computer Name → Change…
 
 Select: Domain
@@ -101,16 +88,26 @@ Enter domain: lab.local
 
 When prompted, enter:
 
-vbnet
-Kopiuj
-Edytuj
 Username: Administrator
 Password: (as configured during AD install)
+
+
+<p allign="center">
+<img src="../images/ad2/s24 change name lab local.png" width="900"/> </p>
+
+
+
+
 Success message: "Welcome to lab.local"
+
+<p allign="center">
+<img src="../images/ad2/s26 welcom lablocal.png" width="900"/> </p>
+
 
 Restart required.
 
-📸 Screenshot: Domain join success
+<p allign="center">
+<img src="../images/ad2/s26 restart.png" width="900"/> </p>
 
 8. Log In as Domain User
 After reboot:
@@ -118,41 +115,14 @@ After reboot:
 At login screen → Click Other User
 
 Enter:
-
-makefile
-Kopiuj
-Edytuj
-Username: lab\jkowalski
+Username: jkowalski
 Password: Kowal1234
 First login may take time due to profile creation.
 
-📸 Screenshot: Desktop after domain login
+<p allign="center">
+<img src="../images/ad2/s27 kowalski logged in.png" width="900"/> </p>
 
-9. Verify Domain Join
-After login as jkowalski:
 
-Win + R → cmd
-
-Run:
-
-bash
-Kopiuj
-Edytuj
-whoami
-Expected:
-
-Kopiuj
-Edytuj
-lab\jkowalski
-You can also run:
-
-bash
-Kopiuj
-Edytuj
-echo %logonserver%
-To check domain controller.
-
-📸 Screenshot: whoami and logonserver output
 
 📌 Summary
 In this lab we:
