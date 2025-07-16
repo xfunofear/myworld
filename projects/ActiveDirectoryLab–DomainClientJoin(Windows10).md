@@ -54,11 +54,10 @@ Subnet Mask: 255.255.255.0
 Default Gateway: 192.168.41.1 (optional)
 Preferred DNS: 192.168.41.10 (DC address)
 
-yaml
-Kopiuj
-Edytuj
+<p allign="center">
+<img src="../images/ad2/s22ip.png" width="900"/> </p>
 
-📸 Screenshot: IP Configuration
+
 
 ---
 
