@@ -1,86 +1,170 @@
-# 🖥️ Active Directory Lab – Domain Client Join (Windows 10)
+# 🖥️ Active Directory Lab – Joining Windows 10 Client to Domain
 
-This lab demonstrates how to configure a **Windows 10 client machine** and join it to an existing **Active Directory domain** (`lab.local`) hosted on a separate domain controller (Windows Server 2019).
+This lab demonstrates how to configure a Windows 10 client and join it to an existing Active Directory domain (`lab.local`) hosted on a Windows Server 2019 machine.
 
 ---
 
 ## ⚙️ Lab Environment
 
-| Component          | Configuration                      |
-|--------------------|-------------------------------------|
-| Virtualization     | VirtualBox                         |
-| Domain Name        | `lab.local`                        |
-| Domain Controller  | Already configured (`SERVER01`)    |
-| Client Machine     | New Windows 10 VM (`CLIENT01`)     |
-| Network            | Host-Only Adapter (`vboxnet0`)     |
+| Component           | Details                          |
+|---------------------|----------------------------------|
+| Virtualization      | VirtualBox                       |
+| Network Type        | Host-Only Adapter (`vboxnet0`)   |
+| Domain Name         | `lab.local`                      |
+| Domain Controller   | SERVER01 – 192.168.41.10         |
+| Windows 10 Client   | CLIENT01 – 192.168.41.11         |
+| DNS Server          | 192.168.41.10                    |
 
 ---
 
-## 🧱 Windows 10 VM Setup
+## ✅ Steps
 
-### 1. Create the Virtual Machine
+### 1. Create Windows 10 Virtual Machine
 
-- Image: **Windows 10 Education ISO**
-- Machine name: `CLIENT01`
-- Username: `LocalAdmin`
-- Password: `Client1234`
-- Enable **Host-Only Adapter** in network settings:
-  - Adapter: `vboxnet0`
-  - DHCP: **Disabled**
-- Set **static IP** and DNS:
-
-IP: 192.168.41.11
-Mask: 255.255.255.0
-Gateway: 192.168.41.1 (optional)
-DNS: 192.168.41.10 (your domain controller)
-
-📸 *Screenshot: client-network-settings.png*
+- Name: `CLIENT01`
+- Edition: Windows 10 Education
+- Allocate at least 2 GB RAM and 30 GB storage
+- Use Windows 10 ISO for installation
+- Set username: `LocalAdmin`
+- Set password: `Client1234`
 
 ---
 
-### 2. Rename the Computer
+### 2. Configure Network in VirtualBox
 
-- Go to: **Settings** → **System** → **About**
-- Rename to `CLIENT01`
-- Reboot required
+- Go to `Settings` → `Network`  
+  - Adapter 1 → **Host-Only Adapter**
+  - Name: `vboxnet0`
+  - Adapter Type: Intel PRO/1000 MT Desktop
+  - Promiscuous Mode: Deny
 
-📸 *Screenshot: rename-client01.png*
+<p allign="center">
+<img =src"../images/ad2/vm1.jpg" width="900"/></p>p
 
----
 
-### 3. Join Domain `lab.local`
-
-- Open **System Properties** → Change settings → Join a domain
-- Enter domain: `lab.local`
-- Provide domain admin credentials (e.g. `Administrator`)
-- Restart when prompted
-
-📸 *Screenshot: domain-join-success.png*
 
 ---
 
-### 4. Log in as Domain User
+### 3. Configure Static IP in Windows 10
 
-- At login screen, click **Other user**
-- Enter:
+- Open **Control Panel** → Network and Sharing Center  
+- Click `Change adapter settings` → Right-click `Ethernet` → Properties  
+- Choose **IPv4** → Properties → Enter:
 
-Username: lab\jkowalski
-Password: Kowal1234
+IP Address: 192.168.41.11
+Subnet Mask: 255.255.255.0
+Default Gateway: 192.168.41.1 (optional)
+Preferred DNS: 192.168.41.10 (DC address)
 
 yaml
 Kopiuj
 Edytuj
 
-- Successfully logged into domain as `jkowalski`
-
-📸 *Screenshot: logged-in-jkowalski.png*
+📸 Screenshot: IP Configuration
 
 ---
 
-## 📌 Summary
+### 4. Rename Computer
 
-This lab demonstrates:
+- Win + R → `sysdm.cpl`
+- Click `Change...` under Computer Name
+- New name: `CLIENT01`
+- Restart when prompted
 
-- Creating and configuring a Windows 10 VM for domain access
-- Joining a machine to an existing Active Directory domain
-- Logging in with a domain user managed from the domain controller
+📸 Screenshot: Rename dialog
+
+---
+
+### 5. Ping Domain Controller
+
+Open Command Prompt:
+
+ping 192.168.41.10
+Expect 0% packet loss.
+
+📸 Screenshot: Successful ping to DC
+
+6. Test DNS Resolution
+Still in Command Prompt:
+
+bash
+Kopiuj
+Edytuj
+ping lab.local
+If reply comes from 192.168.41.10, DNS is working.
+
+📸 Screenshot: ping lab.local
+
+7. Join Domain
+Win + R → sysdm.cpl → Computer Name → Change…
+
+Select: Domain
+
+Enter domain: lab.local
+
+When prompted, enter:
+
+vbnet
+Kopiuj
+Edytuj
+Username: Administrator
+Password: (as configured during AD install)
+Success message: "Welcome to lab.local"
+
+Restart required.
+
+📸 Screenshot: Domain join success
+
+8. Log In as Domain User
+After reboot:
+
+At login screen → Click Other User
+
+Enter:
+
+makefile
+Kopiuj
+Edytuj
+Username: lab\jkowalski
+Password: Kowal1234
+First login may take time due to profile creation.
+
+📸 Screenshot: Desktop after domain login
+
+9. Verify Domain Join
+After login as jkowalski:
+
+Win + R → cmd
+
+Run:
+
+bash
+Kopiuj
+Edytuj
+whoami
+Expected:
+
+Kopiuj
+Edytuj
+lab\jkowalski
+You can also run:
+
+bash
+Kopiuj
+Edytuj
+echo %logonserver%
+To check domain controller.
+
+📸 Screenshot: whoami and logonserver output
+
+📌 Summary
+In this lab we:
+
+✅ Installed and configured Windows 10 VM
+✅ Set static IP and DNS for domain connectivity
+✅ Renamed and joined the machine to domain lab.local
+✅ Logged in successfully using a domain user account
+
+This is a foundational setup for enterprise-style Active Directory environments, useful for testing GPOs, domain authentication, software deployment, etc.
+
+
