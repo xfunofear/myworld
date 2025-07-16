@@ -15,7 +15,7 @@ Windows Projects
 </h2>
 
 [Active Directory Setup Project — Windows Server 2022](projects/ActiveDirectorySetupProject—WindowsServer2022.html)
-
+[Active Directory Lab – Joining Windows 10 Client to Domain](ActiveDirectoryLab–DomainClientJoin(Windows10).html)
 ---
 
 <h2>
